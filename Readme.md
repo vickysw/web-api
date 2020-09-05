@@ -5,7 +5,8 @@
 	- composer dump-autoload -o
 
 ###### Install package in soruce directory
-	*mpdf is for demo purpose. you can find package list [here] (https://packagist.org/explore/)*
+
+	*mpdf is for demo purpose. you can find package list* [here] (https://packagist.org/explore/)
 	- composer require mpdf/mpdf 
 	- composer dump-autoload -o
 
