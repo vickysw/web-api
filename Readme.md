@@ -1,4 +1,4 @@
-## Installation and usages guide
+ ## Installation and usages guide
 	
 ###### Install autoload class
 	- composer install

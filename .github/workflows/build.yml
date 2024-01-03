@@ -1,0 +1,22 @@
+name: deployment
+on:
+    push:
+        branches:
+            - 'master'
+jobs:
+    deployment:
+        name: web api deployment
+        runs-on: ubuntu-latest
+        steps:
+            - name: Fsync
+              uses: SamKirkland/FTP-Deploy-Action@4.3.3
+              with: 
+                server: 180.149.240.143
+                port: 2083 
+                username: aparajithaphpdev
+                password: VOHIBd$8=-gi
+                server-dir: /public_html
+
+
+
+
