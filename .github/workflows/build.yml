@@ -15,7 +15,7 @@ jobs:
                 port: 2083 
                 username: aparajithaphpdev
                 password: VOHIBd$8=-gi
-                server-dir: /public_html
+                server-dir: /public_html/
 
 
 
