@@ -7,24 +7,7 @@ jobs:
     deployment:
         name: web api deployment
         runs-on: ubuntu-latest
-        steps:
-            - name: Install OpenVPN
-              run: sudo apt update && sudo apt install -y openvpn openvpn-systemd-resolved
-            - name: Connect to VPN
-              uses: "kota65535/github-openvpn-connect-action@v2"
-              with:
-                config_file: .github/workflows/config/pfSense-UDP4-1194-Vanraj.Kalsariya-config.ovpn
-                username: ${{ secrets.OVPN_USERNAME }}
-                password: ${{ secrets.OVPN_PASSWORD }}
-                client_key: ${{ secrets.USER_KEY }}
-            - name: Fsync
-              uses: SamKirkland/FTP-Deploy-Action@4.3.3
-              with: 
-                server: ${{ secrets.SERVER}}
-                port: ${{ secrets.PORT}}
-                username: ${{ secrets.USERNAME}}
-                password: ${{ secrets.PASSWORD}}
-                server-dir: ${{ secrets.SERVER_DIR}}
+        
 
 
 
